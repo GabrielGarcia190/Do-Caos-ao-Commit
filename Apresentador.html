@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Do Caos ao Commit: Git & GitHub</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+    body { font-family: 'Inter', sans-serif; overflow:hidden; }
+    .slide-container { display: none; height: 100vh; width: 100vw; justify-content: center; align-items: center; padding: 4rem; }
+    .slide-active { display: flex; }
+</style>
+    </head>
+    <body class="bg-gray-900 text-gray-100">
+
+        <div id="presentation-container"></div>
+
+        <div class="fixed bottom-8 w-full flex justify-center gap-6">
+            <button id="prevBtn"
+                class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition">⬅️
+                Voltar</button>
+            <button id="nextBtn"
+                class="px-6 py-3 bg-green-600 text-white rounded-xl shadow-lg hover:bg-green-700 transition">Avançar
+                ➡️</button>
+        </div>
+
+        <script>
+    const slideFiles = [
+        './slides/capa.html',
+        'slides/slide1.html',
+        'slides/slide2.html',
+        'slides/slide3.html',
+        'slides/slide4.html',
+        'slides/slide5.html',
+        'slides/slide6.html'
+    ];
+
+    let currentSlide = 0;
+    const container = document.getElementById('presentation-container');
+
+    async function loadSlide(index) {
+        const response = await fetch(slideFiles[index]);
+        const html = await response.text();
+        container.innerHTML = html;
+        container.querySelector('.slide-container').classList.add('slide-active');
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + slideFiles.length) % slideFiles.length;
+        loadSlide(currentSlide);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % slideFiles.length;
+        loadSlide(currentSlide);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if(e.key === 'ArrowRight') {
+            currentSlide = (currentSlide + 1) % slideFiles.length;
+            loadSlide(currentSlide);
+        } else if(e.key === 'ArrowLeft') {
+            currentSlide = (currentSlide - 1 + slideFiles.length) % slideFiles.length;
+            loadSlide(currentSlide);
+        }
+    });
+
+    loadSlide(currentSlide);
+</script>
+
+    </body>
+</html>
