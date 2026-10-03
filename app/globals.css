@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-git-blue: #3c87d6;
+  --color-github-gray: #1b1f23;
+  --color-tech-dark: #0f172a;
+  --color-tech-light: #94a3b8;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.slide-page {
+  box-sizing: border-box;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 4rem;
+}
+
+.slide-page img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.slide-page .icon-large {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .slide-page {
+    padding: 1.25rem;
+  }
+}
