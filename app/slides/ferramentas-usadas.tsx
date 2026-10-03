@@ -47,6 +47,6 @@ const markup = String.raw`
 
 export const title = "Ferramentas Usadas";
 
-export default function Slide21() {
+export default function Slide48() {
   return <SlideMarkup markup={markup} />;
 }

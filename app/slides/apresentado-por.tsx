@@ -42,6 +42,6 @@ const markup = String.raw`
 
 export const title = "Apresentado por";
 
-export default function Slide23() {
+export default function Slide50() {
   return <SlideMarkup markup={markup} />;
 }

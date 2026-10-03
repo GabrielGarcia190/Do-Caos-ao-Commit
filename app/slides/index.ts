@@ -26,9 +26,29 @@ import Slide24 from "./criando-projeto";
 import Slide25 from "./criando-arquivo";
 import Slide26 from "./abrindo-terminal";
 import Slide27 from "./iniciando-git";
-// import Slide21 from "./ferramentas-usadas";
-// import Slide22 from "./obrigado";
-// import Slide23 from "./apresentado-por";
+import Slide28 from "./adicionando-arquivos-git";
+import Slide29 from "./fazendo-commit";
+import Slide30 from "./criando-repositorio-no-github";
+import Slide31 from "./conectando-ao-remoto";
+import Slide32 from "./enviando-para-o-github";
+import Slide33 from "./trabalhando-com-branch";
+import Slide34 from "./alterando-o-projeto";
+import Slide35 from "./fazendo-commit-2";
+import Slide36 from "./fazendo-commit-3";
+import Slide37 from "./criando-um-pull-request";
+import Slide38 from "./fazendo-o-merge";
+import Slide39 from "./segunda-pratica";
+import Slide40 from "./clonando-o-projeto";
+import Slide41 from "./criando-sua-branch";
+import Slide42 from "./alterando-o-projeto-2";
+import Slide43 from "./salvando-alteracoes";
+import Slide44 from "./criando-pull-request";
+import Slide45 from "./conflito";
+import Slide46 from "./resolvendo-o-conflito";
+import Slide47 from "./fluxo-real-de-trabalho";
+import Slide48 from "./ferramentas-usadas";
+import Slide49 from "./obrigado";
+import Slide50 from "./apresentado-por";
 
 export type SlideDefinition = {
   title: string;
@@ -63,6 +83,29 @@ const slides: SlideDefinition[] = [
   { title: "Criando o arquivo", component: Slide25 },
   { title: "Abrindo o terminal", component: Slide26 },
   { title: "Iniciando o Git", component: Slide27 },
+  { title: "Adicionando arquivos do Git", component: Slide28 },
+  { title: "Fazendo commit", component: Slide29 },
+  { title: "Criando repositório no GitHub", component: Slide30 },
+  { title: "Conectando ao remoto", component: Slide31 },
+  { title: "Enviando para o GitHub", component: Slide32 },
+  { title: "Trabalhando com branch", component: Slide33 },
+  { title: "Alterando o projeto", component: Slide34 },
+  { title: "Fazendo commit", component: Slide35 },
+  { title: "Fazendo commit", component: Slide36 },
+  { title: "Criando um Pull Request", component: Slide37 },
+  { title: "Fazendo o Merge", component: Slide38 },
+  { title: "Segunda Prática", component: Slide39 },
+  { title: "Clonando o projeto", component: Slide40 },
+  { title: "Criando sua branch", component: Slide41 },
+  { title: "Alterando o projeto", component: Slide42 },
+  { title: "Salvando alterações", component: Slide43 },
+  { title: "Criando Pull Request", component: Slide44 },
+  { title: "Conflito", component: Slide45 },
+  { title: "Resolvendo o conflito", component: Slide46 },
+  { title: "Fluxo real de trabalho", component: Slide47 },
+  { title: "Ferramentas Usadas", component: Slide48 },
+  { title: "Obrigado!", component: Slide49 },
+  { title: "Apresentado por", component: Slide50 },
 ];
 
 export default slides;
