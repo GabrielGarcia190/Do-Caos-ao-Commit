@@ -25,14 +25,14 @@ const markup = String.raw`
                             <div
                                 class="bg-gray-800 p-4 rounded-xl shadow-2xl inline-block mb-6">
                                 <img
-                                    src="/Imagens/Vini.jpeg"
+                                    src="/Imagens/PMasson.jpg"
                                     class="w-64 h-64 bg-gray-700 rounded-lg flex items-center justify-center text-tech-light" />
                             </div>
                             <h3 class="text-4xl font-semibold text-git-blue">
-                                Vinicius Pires
+                                Pedro Masson    
                             </h3>
                             <div class="mt-6">
-                                <img src="/Imagens/LinkedinVini.png"
+                                <img src="/Imagens/PedroLinkedin.jpeg"
                                     class="w-32 h-32 bg-gray-700 rounded-lg flex items-center justify-center text-tech-light text-sm p-2" />
                             </div>
                         </div>
