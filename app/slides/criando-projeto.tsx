@@ -3,7 +3,7 @@ import SlideMarkup from "../components/slide-markup";
 const markup = String.raw`
             <div class="max-w-5xl w-full">
                 <h2 class="text-5xl font-bold mb-8 text-gray-100 text-center">
-                    Criando o projeto
+                    Clonando o projeto
                 </h2>
 
                 <ul class="text-2xl space-y-4 bg-gray-800 p-8 rounded-xl shadow-2xl">
@@ -19,7 +19,7 @@ const markup = String.raw`
             </div>
 `;
 
-export const title = "Criando o projeto";
+export const title = "Clonando o projeto";
 
 export default function Slide24() {
   return <SlideMarkup markup={markup} />;

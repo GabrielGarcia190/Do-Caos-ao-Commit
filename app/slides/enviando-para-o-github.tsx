@@ -7,7 +7,7 @@ const markup = String.raw`
     </h2>
 
     <div class="bg-gray-800 p-8 rounded-xl font-mono text-xl">
-        <p>git push -u origin main</p>
+        <p>git push</p>
     </div>
 
     <p class="text-xl text-center mt-6 text-tech-light">

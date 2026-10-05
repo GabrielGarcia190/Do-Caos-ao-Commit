@@ -24,7 +24,7 @@ import Slide22 from "./vamos-pratica";
 import Slide23 from "./configuracao";
 import Slide24 from "./criando-projeto";
 import Slide25 from "./criando-arquivo";
-import Slide26 from "./abrindo-terminal";
+import Slide26 from "./Fazendo-Fork";
 import Slide27 from "./iniciando-git";
 import Slide28 from "./adicionando-arquivos-git";
 import Slide29 from "./fazendo-commit";
@@ -49,6 +49,7 @@ import Slide47 from "./fluxo-real-de-trabalho";
 import Slide48 from "./ferramentas-usadas";
 import Slide49 from "./obrigado";
 import Slide50 from "./apresentado-por";
+import Slide51 from "./exemplo de json";
 
 export type SlideDefinition = {
   title: string;
@@ -56,7 +57,7 @@ export type SlideDefinition = {
 };
 
 const slides: SlideDefinition[] = [
-  { title: "Melhor apresentação do dia - Do caaos ao Commit", component: Slide01 },
+  { title: "Do caaos ao Commit", component: Slide01 },
   { title: "O que é Controle de Versão?", component: Slide02 },
   { title: "O que é Versionamento de Arquivos?", component: Slide03 },
   { title: "Breve Histórico do Git", component: Slide04 },
@@ -79,19 +80,20 @@ const slides: SlideDefinition[] = [
   { title: "O que é .gitignore?", component: Slide21 },
   { title: "Vamos para a prática", component: Slide22 },
   { title: "Configuração Inicial", component: Slide23 },
-  { title: "Criando o projeto", component: Slide24 },
-  { title: "Criando o arquivo", component: Slide25 },
   { title: "Abrindo o terminal", component: Slide26 },
-  { title: "Iniciando o Git", component: Slide27 },
+  { title: "Clonando o projeto", component: Slide24 },
+  { title: "Clonando o projeto", component: Slide25 },
+  { title: "Alterando projeto", component: Slide27 },
+  { title: "Alterando projeto", component: Slide51 },
   { title: "Adicionando arquivos do Git", component: Slide28 },
   { title: "Fazendo commit", component: Slide29 },
-  { title: "Criando repositório no GitHub", component: Slide30 },
-  { title: "Conectando ao remoto", component: Slide31 },
+  // { title: "Criando repositório no GitHub", component: Slide30 },
+  // { title: "Conectando ao remoto", component: Slide31 },
   { title: "Enviando para o GitHub", component: Slide32 },
-  { title: "Trabalhando com branch", component: Slide33 },
-  { title: "Alterando o projeto", component: Slide34 },
-  { title: "Fazendo commit", component: Slide35 },
-  { title: "Fazendo commit", component: Slide36 },
+  // { title: "Trabalhando com branch", component: Slide33 },
+  // { title: "Alterando o projeto", component: Slide34 },
+  // { title: "Fazendo commit", component: Slide35 },
+  // { title: "Fazendo commit", component: Slide36 },
   { title: "Criando um Pull Request", component: Slide37 },
   { title: "Fazendo o Merge", component: Slide38 },
   { title: "Segunda Prática", component: Slide39 },

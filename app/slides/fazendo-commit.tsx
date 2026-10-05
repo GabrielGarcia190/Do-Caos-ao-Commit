@@ -7,7 +7,7 @@ const markup = String.raw`
                 </h2>
 
                 <div class="bg-gray-800 p-8 rounded-xl font-mono text-xl space-y-4">
-                    <p>git commit -m "feat: primeiro commit"</p>
+                    <p>git commit -m "feat: seu nome de usuário"</p>
                 </div>
 
                 <p class="text-xl text-center mt-6 text-tech-light">

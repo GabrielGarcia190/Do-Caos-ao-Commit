@@ -13,7 +13,7 @@ const markup = String.raw`
 
                     <h1
                         class="text-8xl font-extrabold mb-4 text-git-blue tracking-tighter">
-                        Melhor apresentação do dia - Do caaos ao Commit
+                       Do caos ao Commit
                     </h1>
                     <h2 class="text-4xl text-gray-200 font-light mb-12">
                         Organizando projetos com Git & GitHub
@@ -21,7 +21,7 @@ const markup = String.raw`
                 </div>
 `;
 
-export const title = "Melhor apresentação do dia - Do caaos ao Commit";
+export const title = "Do caos ao Commit";
 
 export default function Slide01() {
   return <SlideMarkup markup={markup} />;
