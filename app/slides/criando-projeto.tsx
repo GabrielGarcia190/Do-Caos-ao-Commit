@@ -1,26 +1,28 @@
-import SlideMarkup from "../components/slide-markup";
+import { SlideMarkup } from "../components/slide-markup";
+import type { ISlide } from "./islide";
 
-const markup = String.raw`
-            <div class="max-w-5xl w-full">
-                <h2 class="text-5xl font-bold mb-8 text-gray-100 text-center">
+const slide: ISlide = {
+  titulo: "Clonando o projeto",
+  slide() {
+    return SlideMarkup(
+<div className="max-w-5xl w-full">
+                <h2 className="text-5xl font-bold mb-8 text-gray-100 text-center">
                     Clonando o projeto
                 </h2>
 
-                <ul class="text-2xl space-y-4 bg-gray-800 p-8 rounded-xl shadow-2xl">
+                <ul className="text-2xl space-y-4 bg-gray-800 p-8 rounded-xl shadow-2xl">
                     <li>1. Clique com o botão direito na área de trabalho</li>
                     <li>2. Novo → Pasta</li>
                     <li>3. Nomeie como <strong>projeto-git</strong></li>
                     <li>4. Abra a pasta</li>
                 </ul>
 
-                <p class="text-xl text-center mt-6 text-tech-light">
+                <p className="text-xl text-center mt-6 text-tech-light">
                     💡 Vamos trabalhar dentro dessa pasta
                 </p>
             </div>
-`;
+    );
+  },
+};
 
-export const title = "Clonando o projeto";
-
-export default function Slide24() {
-  return <SlideMarkup markup={markup} />;
-}
+export default slide;

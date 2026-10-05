@@ -1,39 +1,41 @@
-import SlideMarkup from "../components/slide-markup";
+import { SlideMarkup } from "../components/slide-markup";
+import type { ISlide } from "./islide";
 
-const markup = String.raw`
-<div class="max-w-4xl w-full">
-                    <h2 class="text-5xl font-bold mb-4 text-gray-100">
+const slide: ISlide = {
+  titulo: "Principais Comandos do Git III",
+  slide() {
+    return SlideMarkup(
+<div className="max-w-4xl w-full">
+                    <h2 className="text-5xl font-bold mb-4 text-gray-100">
                         Principais Comandos do Git III
                     </h2>
-                    <h3 class="text-2xl font-light mb-8 text-git-blue">
+                    <h3 className="text-2xl font-light mb-8 text-git-blue">
                         Sincronizando com o Remoto
                     </h3>
                     <div
-                        class="bg-github-gray p-8 rounded-xl shadow-2xl space-y-6">
+                        className="bg-github-gray p-8 rounded-xl shadow-2xl space-y-6">
                         <div
-                            class="font-mono text-xl text-cyan-400 bg-black/50 p-4 rounded-lg border-l-4 border-cyan-400">
-                            <span class="icon-large text-3xl">⬇️</span>
-                            <span class="font-bold">git pull</span>
+                            className="font-mono text-xl text-cyan-400 bg-black/50 p-4 rounded-lg border-l-4 border-cyan-400">
+                            <span className="icon-large text-3xl">⬇️</span>
+                            <span className="font-bold">git pull</span>
                             <span
-                                class="block text-tech-light text-sm mt-1">Atualiza
+                                className="block text-tech-light text-sm mt-1">Atualiza
                                 o repositório local com as mudanças do
                                 remoto.</span>
                         </div>
                         <div
-                            class="font-mono text-xl text-green-400 bg-black/50 p-4 rounded-lg border-l-4 border-green-400">
-                            <span class="icon-large text-3xl">⬆️</span>
-                            <span class="font-bold">git push</span>
+                            className="font-mono text-xl text-green-400 bg-black/50 p-4 rounded-lg border-l-4 border-green-400">
+                            <span className="icon-large text-3xl">⬆️</span>
+                            <span className="font-bold">git push</span>
                             <span
-                                class="block text-tech-light text-sm mt-1">Envia
+                                className="block text-tech-light text-sm mt-1">Envia
                                 os commits locais para o repositório
                                 remoto.</span>
                         </div>
                     </div>
                 </div>
-`;
+    );
+  },
+};
 
-export const title = "Principais Comandos do Git III";
-
-export default function Slide14() {
-  return <SlideMarkup markup={markup} />;
-}
+export default slide;

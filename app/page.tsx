@@ -33,14 +33,14 @@ export default function PresentationPage() {
     return () => window.clearTimeout(timer);
   }, [currentSlide, controlsVisible]);
 
-  const ActiveSlide = slides[currentSlide].component;
+  const slideAtual = slides[currentSlide];
 
   return (
     <main
       className="relative h-screen w-screen overflow-hidden bg-gray-900"
       onMouseMove={() => setControlsVisible(true)}
     >
-      <ActiveSlide />
+      {slideAtual.slide()}
 
       <nav
         aria-label="Navegação da apresentação"
@@ -64,7 +64,7 @@ export default function PresentationPage() {
           aria-live="polite"
           className="rounded-full bg-gray-800 px-6 py-3 text-lg font-semibold text-gray-300 shadow-xl"
         >
-          {currentSlide + 1} / {slides.length}
+          {slideAtual.numero} / {slides.length}
         </output>
 
         <button

@@ -1,113 +1,113 @@
-import type { ComponentType } from "react";
-import Slide01 from "./melhor-apresentacao-do-dia-do-caaos-ao-commit";
-import Slide02 from "./o-que-e-controle-de-versao";
-import Slide03 from "./o-que-e-versionamento-de-arquivos";
-import Slide04 from "./breve-historico-do-git";
-import Slide05 from "./linus-torvalds";
-import Slide06 from "./diferenca-entre-git-e-github";
-import Slide07 from "./diferenca-entre-git-e-github-2";
-import Slide08 from "./vantagens-de-usar-git-e-github";
-import Slide09 from "./fundamentos-o-que-e-um-repositorio-repo";
-import Slide10 from "./diferenca-entre-git-e-github-3";
-import Slide11 from "./ciclo-de-vida-dos-arquivos";
-import Slide12 from "./principais-comandos-do-git-i";
-import Slide13 from "./principais-comandos-do-git-ii";
-import Slide14 from "./principais-comandos-do-git-iii";
-import Slide15 from "./padronizacao-de-commits";
-import Slide16 from "./o-que-e-uma-branch-ramificacao";
-import Slide17 from "./exemplo-de-funcionamento-de-branches";
-import Slide18 from "./o-que-e-um-pull-request-pr";
-import Slide19 from "./merge-mesclagem-e-conflitos";
-import Slide20 from "./principais-erros-no-git";
-import Slide21 from "./git-ignore";
-import Slide22 from "./vamos-pratica";
-import Slide23 from "./configuracao";
-import Slide24 from "./criando-projeto";
-import Slide25 from "./criando-arquivo";
-import Slide26 from "./Fazendo-Fork";
-import Slide27 from "./iniciando-git";
-import Slide28 from "./adicionando-arquivos-git";
-import Slide29 from "./fazendo-commit";
-import Slide30 from "./criando-repositorio-no-github";
-import Slide31 from "./conectando-ao-remoto";
-import Slide32 from "./enviando-para-o-github";
-import Slide33 from "./trabalhando-com-branch";
-import Slide34 from "./alterando-o-projeto";
-import Slide35 from "./fazendo-commit-2";
-import Slide36 from "./fazendo-commit-3";
-import Slide37 from "./criando-um-pull-request";
-import Slide38 from "./fazendo-o-merge";
-import Slide39 from "./segunda-pratica";
-import Slide40 from "./clonando-o-projeto";
-import Slide41 from "./criando-sua-branch";
-import Slide42 from "./alterando-o-projeto-2";
-import Slide43 from "./salvando-alteracoes";
-import Slide44 from "./criando-pull-request";
-import Slide45 from "./conflito";
-import Slide46 from "./resolvendo-o-conflito";
-import Slide47 from "./fluxo-real-de-trabalho";
-import Slide48 from "./ferramentas-usadas";
-import Slide49 from "./obrigado";
-import Slide50 from "./apresentado-por";
-import Slide51 from "./exemplo de json";
+import type { ISlide, ISlideDaApresentacao } from "./islide";
+import capa from "./melhor-apresentacao-do-dia-do-caaos-ao-commit";
+import oQueEControleDeVersao from "./o-que-e-controle-de-versao";
+import oQueEVersionamentoDeArquivos from "./o-que-e-versionamento-de-arquivos";
+import breveHistoricoDoGit from "./breve-historico-do-git";
+import linusTorvalds from "./linus-torvalds";
+import diferencaEntreGitEGithub from "./diferenca-entre-git-e-github";
+import diferencaEntreGitEGithub2 from "./diferenca-entre-git-e-github-2";
+import vantagensDeUsarGitEGithub from "./vantagens-de-usar-git-e-github";
+import fundamentosOQueEUmRepositorio from "./fundamentos-o-que-e-um-repositorio-repo";
+import diferencaEntreGitEGithub3 from "./diferenca-entre-git-e-github-3";
+import cicloDeVidaDosArquivos from "./ciclo-de-vida-dos-arquivos";
+import principaisComandosDoGitI from "./principais-comandos-do-git-i";
+import principaisComandosDoGitII from "./principais-comandos-do-git-ii";
+import principaisComandosDoGitIII from "./principais-comandos-do-git-iii";
+import padronizacaoDeCommits from "./padronizacao-de-commits";
+import oQueEUmaBranch from "./o-que-e-uma-branch-ramificacao";
+import exemploDeFuncionamentoDeBranches from "./exemplo-de-funcionamento-de-branches";
+import oQueEUmPullRequest from "./o-que-e-um-pull-request-pr";
+import mergeMesclagemEConflitos from "./merge-mesclagem-e-conflitos";
+import principaisErrosNoGit from "./principais-erros-no-git";
+import gitIgnore from "./git-ignore";
+import vamosPratica from "./vamos-pratica";
+import configuracao from "./configuracao";
+import fazendoFork from "./Fazendo-Fork";
+import criandoProjeto from "./criando-projeto";
+import criandoArquivo from "./criando-arquivo";
+import iniciandoGit from "./iniciando-git";
+import exemploDeJson from "./exemplo-de-json";
+import adicionandoArquivosGit from "./adicionando-arquivos-git";
+import fazendoCommit from "./fazendo-commit";
+// import criandoRepositorioNoGithub from "./criando-repositorio-no-github";
+// import conectandoAoRemoto from "./conectando-ao-remoto";
+import enviandoParaOGithub from "./enviando-para-o-github";
+// import trabalhandoComBranch from "./trabalhando-com-branch";
+// import alterandoOProjeto from "./alterando-o-projeto";
+// import fazendoCommit2 from "./fazendo-commit-2";
+// import fazendoCommit3 from "./fazendo-commit-3";
+import criandoUmPullRequest from "./criando-um-pull-request";
+import fazendoOMerge from "./fazendo-o-merge";
+import segundaPratica from "./segunda-pratica";
+import clonandoOProjeto from "./clonando-o-projeto";
+import criandoSuaBranch from "./criando-sua-branch";
+import alterandoOProjeto2 from "./alterando-o-projeto-2";
+import salvandoAlteracoes from "./salvando-alteracoes";
+import criandoPullRequest from "./criando-pull-request";
+import conflito from "./conflito";
+import resolvendoOConflito from "./resolvendo-o-conflito";
+import fluxoRealDeTrabalho from "./fluxo-real-de-trabalho";
+import ferramentasUsadas from "./ferramentas-usadas";
+import obrigado from "./obrigado";
+import apresentadoPor from "./apresentado-por";
 
-export type SlideDefinition = {
-  title: string;
-  component: ComponentType;
-};
-
-const slides: SlideDefinition[] = [
-  { title: "Do caaos ao Commit", component: Slide01 },
-  { title: "O que é Controle de Versão?", component: Slide02 },
-  { title: "O que é Versionamento de Arquivos?", component: Slide03 },
-  { title: "Breve Histórico do Git", component: Slide04 },
-  { title: "Linus Torvalds", component: Slide05 },
-  { title: "Diferença entre Git e GitHub", component: Slide06 },
-  { title: "Diferença entre Git e GitHub", component: Slide07 },
-  { title: "Vantagens de usar Git e GitHub", component: Slide08 },
-  { title: "Fundamentos: O que é um Repositório (Repo)?", component: Slide09 },
-  { title: "Diferença Entre Git e GitHub", component: Slide10 },
-  { title: "Ciclo de Vida dos Arquivos", component: Slide11 },
-  { title: "Principais Comandos do Git I", component: Slide12 },
-  { title: "Principais Comandos do Git II", component: Slide13 },
-  { title: "Principais Comandos do Git III", component: Slide14 },
-  { title: "Padronização de Commits", component: Slide15 },
-  { title: "O que é uma Branch (Ramificação)?", component: Slide16 },
-  { title: "Exemplo de funcionamento de Branches", component: Slide17 },
-  { title: "O que é um Pull Request (PR)?", component: Slide18 },
-  { title: "Merge (Mesclagem) e Conflitos", component: Slide19 },
-  { title: "Principais Erros no Git", component: Slide20 },
-  { title: "O que é .gitignore?", component: Slide21 },
-  { title: "Vamos para a prática", component: Slide22 },
-  { title: "Configuração Inicial", component: Slide23 },
-  { title: "Abrindo o terminal", component: Slide26 },
-  { title: "Clonando o projeto", component: Slide24 },
-  { title: "Clonando o projeto", component: Slide25 },
-  { title: "Alterando projeto", component: Slide27 },
-  { title: "Alterando projeto", component: Slide51 },
-  { title: "Adicionando arquivos do Git", component: Slide28 },
-  { title: "Fazendo commit", component: Slide29 },
-  // { title: "Criando repositório no GitHub", component: Slide30 },
-  // { title: "Conectando ao remoto", component: Slide31 },
-  { title: "Enviando para o GitHub", component: Slide32 },
-  // { title: "Trabalhando com branch", component: Slide33 },
-  // { title: "Alterando o projeto", component: Slide34 },
-  // { title: "Fazendo commit", component: Slide35 },
-  // { title: "Fazendo commit", component: Slide36 },
-  { title: "Criando um Pull Request", component: Slide37 },
-  { title: "Fazendo o Merge", component: Slide38 },
-  { title: "Segunda Prática", component: Slide39 },
-  { title: "Clonando o projeto", component: Slide40 },
-  { title: "Criando sua branch", component: Slide41 },
-  { title: "Alterando o projeto", component: Slide42 },
-  { title: "Salvando alterações", component: Slide43 },
-  { title: "Criando Pull Request", component: Slide44 },
-  { title: "Conflito", component: Slide45 },
-  { title: "Resolvendo o conflito", component: Slide46 },
-  { title: "Fluxo real de trabalho", component: Slide47 },
-  { title: "Ferramentas Usadas", component: Slide48 },
-  { title: "Obrigado!", component: Slide49 },
-  { title: "Apresentado por", component: Slide50 },
+const ordem: ISlide[] = [
+  capa,
+  oQueEControleDeVersao,
+  oQueEVersionamentoDeArquivos,
+  breveHistoricoDoGit,
+  linusTorvalds,
+  diferencaEntreGitEGithub,
+  diferencaEntreGitEGithub2,
+  vantagensDeUsarGitEGithub,
+  fundamentosOQueEUmRepositorio,
+  diferencaEntreGitEGithub3,
+  cicloDeVidaDosArquivos,
+  principaisComandosDoGitI,
+  principaisComandosDoGitII,
+  principaisComandosDoGitIII,
+  padronizacaoDeCommits,
+  oQueEUmaBranch,
+  exemploDeFuncionamentoDeBranches,
+  oQueEUmPullRequest,
+  mergeMesclagemEConflitos,
+  principaisErrosNoGit,
+  gitIgnore,
+  vamosPratica,
+  configuracao,
+  fazendoFork,
+  criandoProjeto,
+  criandoArquivo,
+  iniciandoGit,
+  exemploDeJson,
+  adicionandoArquivosGit,
+  fazendoCommit,
+  // criandoRepositorioNoGithub,
+  // conectandoAoRemoto,
+  enviandoParaOGithub,
+  // trabalhandoComBranch,
+  // alterandoOProjeto,
+  // fazendoCommit2,
+  // fazendoCommit3,
+  criandoUmPullRequest,
+  fazendoOMerge,
+  segundaPratica,
+  clonandoOProjeto,
+  criandoSuaBranch,
+  alterandoOProjeto2,
+  salvandoAlteracoes,
+  criandoPullRequest,
+  conflito,
+  resolvendoOConflito,
+  fluxoRealDeTrabalho,
+  ferramentasUsadas,
+  obrigado,
+  apresentadoPor,
 ];
+
+const slides: ISlideDaApresentacao[] = ordem.map((slide, indice) => ({
+  ...slide,
+  numero: indice + 1,
+}));
 
 export default slides;

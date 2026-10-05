@@ -1,23 +1,25 @@
-import SlideMarkup from "../components/slide-markup";
+import { SlideMarkup } from "../components/slide-markup";
+import type { ISlide } from "./islide";
 
-const markup = String.raw`
-<div class="max-w-5xl w-full text-center">
-    <h2 class="text-5xl font-bold mb-8 text-gray-100">
+const slide: ISlide = {
+  titulo: "Segunda Prática",
+  slide() {
+    return SlideMarkup(
+<div className="max-w-5xl w-full text-center">
+    <h2 className="text-5xl font-bold mb-8 text-gray-100">
         Mundo Real 🚀
     </h2>
 
-    <p class="text-2xl text-tech-light mb-6">
+    <p className="text-2xl text-tech-light mb-6">
         Agora vamos simular um trabalho em equipe real
     </p>
 
-    <p class="text-xl text-orange-400">
+    <p className="text-xl text-orange-400">
         Cada pessoa vai trabalhar no mesmo projeto
     </p>
 </div>
-`;
+    );
+  },
+};
 
-export const title = "Segunda Prática";
-
-export default function Slide39() {
-  return <SlideMarkup markup={markup} />;
-}
+export default slide;

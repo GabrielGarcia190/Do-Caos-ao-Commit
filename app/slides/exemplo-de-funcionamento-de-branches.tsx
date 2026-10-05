@@ -1,22 +1,24 @@
-import SlideMarkup from "../components/slide-markup";
+import { SlideMarkup } from "../components/slide-markup";
+import type { ISlide } from "./islide";
 
-const markup = String.raw`
-<div class="max-w-4xl w-full text-center">
-                    <h2 class="text-5xl font-bold mb-8 text-gray-100">
+const slide: ISlide = {
+  titulo: "Exemplo de funcionamento de Branches",
+  slide() {
+    return SlideMarkup(
+<div className="max-w-4xl w-full text-center">
+                    <h2 className="text-5xl font-bold mb-8 text-gray-100">
                         Exemplo de funcionamento de Branches
                     </h2>
                     <div
-                        class="bg-gray-800 p-6 rounded-xl shadow-2xl inline-block max-w-full max-h-[80vh]">
+                        className="bg-gray-800 p-6 rounded-xl shadow-2xl inline-block max-w-full max-h-[80vh]">
                         <img
                             src="https://uploads.sitepoint.com/wp-content/uploads/2019/06/155993572204-gitflow.png"
                             alt="Diferença Entre Git e GitHub"
-                            class="w-full h-auto max-h-[60vh] object-contain rounded-lg" />
+                            className="w-full h-auto max-h-[60vh] object-contain rounded-lg" />
                     </div>
                 </div>
-`;
+    );
+  },
+};
 
-export const title = "Exemplo de funcionamento de Branches";
-
-export default function Slide17() {
-  return <SlideMarkup markup={markup} />;
-}
+export default slide;
